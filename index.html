@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="gcdApp">
+<head>
+	<title>GCD order</title>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+<script src="js/app.js"></script>
+
+</head>
+<body>
+
+<div ng-controller="gcdCtrl">
+<h3><br>AngularJs GCD order</h3></br>
+Enter numbers:
+<input type="number" ng-model="a" />
+<input type="number" ng-model="b" />
+<button class="btn-primary" type="submit"  ng-click="gcd(num)">click</button>
+
+<br/><h4/>Gcd:
+<!--<div ng-repeat=" output in result track by $index"> {{output}}</div>-->
+{{result}}
+</div>
+
+</body>
+</html> 
